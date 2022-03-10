@@ -10,7 +10,6 @@ table.table.table-hover
             th= Task.human_attribute_name(:created_at)
             th
     tbody
-        - byebug # 6個目
         - @tasks.each do |task|
             tr
                 td= link_to task.name, task
